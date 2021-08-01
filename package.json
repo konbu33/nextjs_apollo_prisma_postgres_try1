@@ -1,15 +1,27 @@
 {
-  "name": "my-app",
+  "name": "nextjs_apollo_prisma_postgres_try1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "apos": "ts-node-dev --project tsNodeConfig.json aposerver.ts",
+    "apoc": "ts-node-dev --project tsNodeConfig.json apoclient.ts",
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.15",
+    "@prisma/client": "^2.21.2",
+    "apollo-server": "^2.23.0",
     "next": "10.1.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "graphql": "^15.5.0",
+    "prisma": "^2.21.2",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
   }
 }
